@@ -27,11 +27,11 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 ```bash
 cd ~/cpp-snippets
 nix-shell
-[nix-shell:~/cpp-snippets]$ cd unique_ptr_custom_deleter
-[nix-shell:~/cpp-snippets]$ mkdir build
-[nix-shell:~/cpp-snippets]$ cmake ..
-[nix-shell:~/cpp-snippets]$ make
-[nix-shell:~/cpp-snippets]$ ./main
+[nix-shell]$ cd 01_unique_ptr_custom_dtor
+[nix-shell]$ mkdir build && cd build
+[nix-shell]$ cmake ..
+[nix-shell]$ make
+[nix-shell]$ ./main
 ...
-[nix-shell:~/cpp-snippets]$ exit
+[nix-shell]$ exit
 ```

@@ -1,8 +1,5 @@
 #include "heap_unique.hpp"
 
-// std::int32_t heap::Diagnostics::allocated_count = 0;
-// std::int32_t heap::Diagnostics::allocated_bytes = 0;
-
 struct Foo // object to manage
 {
     Foo() { std::cout << "Foo ctor\n"; }

@@ -14,7 +14,7 @@ struct Diagnostics
     static inline std::int32_t allocated_bytes {0};
 };
 
-/// Call destructor (unless nullptr) and then deallocate().
+/// Call destructor (unless nullptr) and then deallocate memory.
 /// Direct usage is not recommended; use smart pointers instead.
 template <typename T>
 void destroy(T* const obj)
@@ -23,7 +23,7 @@ void destroy(T* const obj)
     {
         obj->~T();
     }
-    delete(obj);
+    free(obj);
 }
 
 /// This is a non-op helper wrapper over destroy() needed for delayed function template instantiation.
