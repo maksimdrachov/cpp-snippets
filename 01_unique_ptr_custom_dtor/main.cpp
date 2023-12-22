@@ -19,7 +19,7 @@ class Derived : public Base
 {
 public:
     Derived() { std::cout << "Derived ctor" << std::endl; }
-    virtual ~Derived() { std::cout << "~Derived dtor" << std::endl; }
+    ~Derived() { std::cout << "~Derived dtor" << std::endl; }
 };
 
 int main()

@@ -82,16 +82,16 @@ public:
 
     static void increaseDiag()
     {
-        allocated_count++;
+        Diagnostics::allocated_count++;
         auto size_type = sizeof(T);
-        allocated_bytes += static_cast<std::int32_t>(size_type);
+        Diagnostics::allocated_bytes += static_cast<std::int32_t>(size_type);
     }
 
     static void decreaseDiag()
     {
-        allocated_count--;
+        Diagnostics::allocated_count--;
         auto size_type = sizeof(T);
-        allocated_bytes -= static_cast<std::int32_t>(size_type);
+        Diagnostics::allocated_bytes -= static_cast<std::int32_t>(size_type);
     }
 };
 
